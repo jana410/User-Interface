@@ -3,64 +3,310 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: space-between;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+nav {
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  padding: 20px;
+}
+
+nav a {
+  font-family: "Titillium Web", sans-serif;
+  text-decoration: none;
+  color: grey;
+  padding: 76px;
+}
+
+.logo {
+  padding: 40px;
+  height: 160px;
+  width: 400px;
+}
+
+.header-1-parent {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.header-1-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  width: 40%;
+}
+
+h1 {
+  font-size: 170px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.header-img {
+  width: 40%;
+}
+
+.btn-container {
+  padding-left: 240px;
+}
+
+button {
+  width: 50%;
+  height: 60px;
+  border: 1px solid black;
+  font-size: 30px;
+}
+
+.features-about {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: space-around;
+  width: 100%;
+}
+
+.features {
+  width: 50%;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+.about {
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.middle-img {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.services-product-vision {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: space-between;
+  padding-top: 60px;
+  width: 100%;
+  padding-bottom: 80px;
+  border-bottom: 1px solid black;
+}
+
+.services {
+  width: 33%;
+  padding-right: 30px;
+  padding-left: 40px;
+}
+
+.product {
+  width: 33%;
+  padding-right: 30px;
+  padding-left: 40px;
+}
+
+.vision {
+  width: 33%;
+  padding-right: 30px;
+  padding-left: 40px;
+}
+
+address {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.p-address {
+  padding-bottom: 30px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+}
