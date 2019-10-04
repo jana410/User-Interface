@@ -137,6 +137,8 @@ html,
 body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
+  margin: 0 auto;
+  width: 90%;
 }
 
 h1,
@@ -151,13 +153,25 @@ h5 {
 
 /* Your code starts here! */
 
-header {
+.myHeader {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-content: space-between;
   width: 100%;
-  padding-bottom: 40px;
+  /*background: black;*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: black;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.logo {
+  float: right;
+  background: white;
 }
 
 nav {
@@ -165,21 +179,30 @@ nav {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-
+  background: black;
+  *float: right;
   padding: 20px;
+  color: black;
 }
 
 nav a {
   font-family: "Titillium Web", sans-serif;
   text-decoration: none;
-  color: grey;
-  padding: 76px;
+  color: white;
+  padding: 16px;
 }
 
-.logo {
-  padding: 40px;
-  height: 160px;
-  width: 400px;
+.sticky {
+  top: 0;
+  position: fixed;
+}
+
+nav a:hover,
+.nav a:focus {
+  background: black;
+  color: red;
+  border: 2px solid red;
+  border-radius: 10%;
 }
 
 .header-1-parent {
@@ -187,7 +210,8 @@ nav a {
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .header-1-child {
@@ -199,7 +223,7 @@ nav a {
 }
 
 h1 {
-  font-size: 170px;
+  font-size: 140px;
   text-align: center;
   padding-bottom: 20px;
 }
