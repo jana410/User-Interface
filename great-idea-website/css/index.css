@@ -180,9 +180,9 @@ nav {
   justify-content: space-evenly;
   flex-direction: row;
   background: black;
-  *float: right;
   padding: 20px;
   color: black;
+  width: 80%;
 }
 
 nav a {
